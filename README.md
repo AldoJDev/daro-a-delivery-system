@@ -56,7 +56,7 @@ O sistema suporta múltiplos modelos de assinatura e compras avulsas:
 - **Coordenação de Pedidos**: Sincronização e compartilhamento de pedidos entre os centros.
 - **Previsão de Demanda**: Ferramentas para análise e controle da demanda operacional.
 
-## 🛠️ Pilha de Tecnologias (Tech Stack)
+## 🛠️ Pilha de Tecnologias 
 
 ### Backend
 - **Linguagem**: Java 17+
@@ -67,13 +67,56 @@ O sistema suporta múltiplos modelos de assinatura e compras avulsas:
 - **Linguagem**: TypeScript
 - **Biblioteca**: React.js
 
-## 📊 Arquitetura da Solução
+## 🚀 Como Executar
 
-A arquitetura do sistema segue um modelo cliente-servidor robusto e escalável:
-```Frontend (React + TypeScript)
+### Pré-requisitos
+
+- Java 17+
+- Node.js 16+
+- Microsoft SQL Server
+- Maven
+
+### Execução do Backend
+
+```bash
+cd backend
+mvn spring-boot:run
+```
+
+### Execução do Frontend
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+## 🔧 Funcionamento
+
+### Estrutura da Aplicação
+
+A arquitetura segue um modelo cliente-servidor desacoplado:
+
+```
+Frontend (React + TypeScript)
         ↕
-API Gateway (Spring Boot)
+Backend API (Spring Boot + Java)
         ↕
-Backend Services (Java + Spring Boot)
-        ↕
-Database (Microsoft SQL Server)
+Database (SQL Server)
+```
+
+### Módulos Principais (Telas)
+
+O sistema é organizado em 6 módulos principais:
+
+1.  **Login**: Autenticação de usuários.
+2.  **Programação**: Seleção de centro e data para planejamento.
+3.  **Centro de Distribuição**: Gestão de pedidos e recursos do centro.
+4.  **Motoristas**: Gerenciamento da frota e atribuição de motoristas.
+5.  **Pedidos**: Visualização e gerenciamento de todos os pedidos.
+6.  **Rotas**: Visualização e ajuste das rotas geradas.
+
+
+## 📚 Base Teórica
+
+A funcionalidade central de otimização de rotas é baseada no **Problema do Caixeiro Viajante (PCV)**, um problema clássico de otimização combinatória. O objetivo é encontrar o menor caminho possível que visita um conjunto de cidades (neste caso, endereços de entrega) exatamente uma vez, retornando ao ponto de partida (o centro de distribuição).
