@@ -1,0 +1,129 @@
+.container-master-order{
+    text-align: center;
+}
+
+.container-total-order{
+    background-color: #F3F4F7;
+    margin: calc(100%-10%);
+    padding: 0.5%;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 46em;
+}
+
+.container-left-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e6e6e6;
+    padding-bottom: 15%;
+    width: calc(100% - 75%);
+    border-radius: 20px;
+}
+
+.search-order{
+    color: black;
+    text-align: center;
+}
+
+.p-search-order{
+    font-size: calc(190%);
+    margin-bottom: 5%;
+}
+
+.input-search-order{
+    width: calc(85%);
+    height: calc(27.5%);
+    font-size: calc(200%);
+    padding: calc(2%);
+}
+
+.buttons-order{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.btn-order{
+    border: 2px solid #6866e2;
+    border-radius: 20px;
+    padding:5% 15% 5% 15%;
+    margin: 20% 20% 0 20%;
+    transition: 0.5s;
+    font-size: calc(125%);
+}
+
+.btn-order:hover{
+    background-color: #6866e2;
+    color: white;
+    transition: 0.5s;
+}
+
+.container-right-order{
+    background-color: #e6e6e6;
+    color: black;
+    width: calc(100% - 25%);
+    margin-left: 1.25%;
+    border-radius: 20px;
+    padding: 2% 1% 1% 1%;
+    max-height: auto;
+}
+
+/* Grid CSS */
+.grid-order{
+    display: flex;
+    justify-content: center;
+}
+
+.table-order, .th-order, .td-order{
+    border: 1px solid #222222;
+    border-collapse: collapse;
+    padding: 1.25% 0.5% 1.25% 0.5%;
+    transition: 0.25s;
+}
+
+.td-order{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+  
+.tr-order:hover .td-order{
+    background-color: #717171;
+    color: white;
+    transition: 0.25s;
+}
+
+.filter-order{
+    text-decoration: underline;
+}
+
+.th-order{
+    background-color: #222222;
+    color: white;
+}
+
+.icons-order{
+    font-size: calc(150%);
+}
+
+.UpDownOrder:hover{
+    color: lightgreen;
+}
+
+.DownUpOrder:hover{
+    color: red;
+}
+
+/* Pagination buttons CSS */
+.pagination-order{
+    margin-top: 1%;
+}
+
+.pagination-button-order{
+    margin: 1% 0.5% 1% 0.5%;
+    font-size: 200%;
+}
